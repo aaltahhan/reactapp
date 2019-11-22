@@ -4,12 +4,11 @@ class MyCounter extends Component {
     render() {
         return (
             <div>
-               
-								
-            <ul>  <li> {this.props.counter.name}  
-				 <span className={this.setBadgeClasses()}>{this.formatCt()}</span>
-				<button onClick={() => this.props.onIncrement(this.props.counter)} className="btn btn-primary btn-sm">Add </button>
-                <button onClick={() => this.props.onDelete(this.props.counter.id)} className="btn btn-warning btn-sm m-3">Delete</button></li></ul>
+              <ul> <li> <h5>{this.props.counter.name }</h5>
+                <span className={this.setBadgeClasses()}>{this.formatCt()}</span>
+                <button onClick={() => this.props.onIncrement(this.props.counter)} className="btn btn-primary btn-sm"> Enrollment</button>
+                    <button onClick={() => this.props.onDelete(this.props.counter.id)} className="btn btn-warning btn-sm m-3">Cancel</button>
+                  </li>  </ul>
             </div>
         );
     };
